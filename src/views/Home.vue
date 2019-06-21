@@ -47,7 +47,7 @@ export default {
           return qs.stringify(params, { indices: false })
         }
         }).then(res => {
-          this.subjects = res.data
+          this.subjects = res.data.subjects
         })
       }
     }
