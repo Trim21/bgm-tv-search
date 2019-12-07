@@ -11,6 +11,8 @@ jobs:
       matrix:
         node: [ '10', '8' ]
 
+    name: On Node ${{ matrix.node }}
+
     steps:
       - uses: actions/checkout@v1
 
