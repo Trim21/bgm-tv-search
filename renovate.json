@@ -4,19 +4,5 @@
     ":semanticCommitTypeAll(chore)"
   ],
   "prHourlyLimit": 0,
-  "semanticCommits": true,
-  "packageRules": [
-    {
-      "groupName": "deps-prod",
-      "depTypeList": [
-        "dependencies"
-      ]
-    },
-    {
-      "groupName": "deps-dev",
-      "depTypeList": [
-        "devDependencies"
-      ]
-    }
-  ]
+  "semanticCommits": true
 }
