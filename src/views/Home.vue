@@ -40,12 +40,13 @@ export default {
   watch: {
     tags (newValue, oldValue) {
       if (newValue.length) {
-        this.$http.get('/bgm.tv/api.v1/subjects', { params: {
-          tag: this.tags.map(x => x.text)
-        },
-        paramsSerializer: params => {
-          return qs.stringify(params, { indices: false })
-        }
+        this.$http.get('/bgm.tv/api.v1/subjects', {
+          params: {
+            tag: this.tags.map(x => x.text)
+          },
+          paramsSerializer: params => {
+            return qs.stringify(params, { indices: false })
+          }
         }).then(res => {
           this.subjects = res.data.subjects
         })

@@ -28,11 +28,13 @@
         <v-icon
           v-for="i in bold"
           v-bind:key="`bold${i}`"
-        >star</v-icon>
+        >star
+        </v-icon>
         <v-icon
           v-for="i in border"
           v-bind:key="`border${i}`"
-        >star_border</v-icon>
+        >star_border
+        </v-icon>
       </v-card-actions>
     </v-card>
   </v-flex>
@@ -44,11 +46,15 @@ export default {
   props: {
     subject: {
       type: Object,
-      default: () => ({ id: 0, name: 'default name', image: 'lain.bgm.tv/img/no_icon_subject.png', score: 1.1 })
+      default: () => ({
+        id: 0,
+        name: 'default name',
+        image: 'lain.bgm.tv/img/no_icon_subject.png',
+        score: 1.1
+      })
     }
   },
   created () {
-    console.log('created')
   },
   computed: {
     bgmUrl: function () {
