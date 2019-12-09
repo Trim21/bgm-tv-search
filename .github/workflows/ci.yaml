@@ -21,7 +21,7 @@ jobs:
       matrix:
         node: [ '10', '8' ]
 
-    name: On Node ${{ matrix.node }}
+    name: Node ${{ matrix.node }}
 
     steps:
       - uses: actions/checkout@v1
@@ -41,5 +41,5 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
 
-      - run: npm run test
+      - run: npm run test:unit
       - run: npm run build
