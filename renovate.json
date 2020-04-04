@@ -10,14 +10,9 @@
   },
   "packageRules": [
     {
-      "groupName": "deps-prod",
+      "groupName": "deps",
       "depTypeList": [
-        "dependencies"
-      ]
-    },
-    {
-      "groupName": "deps-dev",
-      "depTypeList": [
+        "dependencies",
         "devDependencies"
       ]
     }
