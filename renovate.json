@@ -3,6 +3,9 @@
     "config:base",
     ":semanticCommitTypeAll(chore)"
   ],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "prHourlyLimit": 0,
   "semanticCommits": true
 }
