@@ -1,11 +1,25 @@
 {
   "extends": [
-    "config:base",
-    ":semanticCommitTypeAll(chore)"
+    "schedule:monthly",
+    ":masterIssue",
+    "config:base"
   ],
+  "prHourlyLimit": 6,
   "lockFileMaintenance": {
     "enabled": true
   },
-  "prHourlyLimit": 0,
-  "semanticCommits": true
+  "packageRules": [
+    {
+      "groupName": "deps-prod",
+      "depTypeList": [
+        "dependencies"
+      ]
+    },
+    {
+      "groupName": "deps-dev",
+      "depTypeList": [
+        "devDependencies"
+      ]
+    }
+  ]
 }
