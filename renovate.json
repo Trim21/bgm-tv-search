@@ -1,11 +1,14 @@
 {
   "extends": [
-    "schedule:monthly",
-    ":masterIssue",
-    "config:base"
+    "@trim21",
+    "@trim21:js",
+    "@trim21:app",
+    "@trim21:monthly"
   ],
-  "prHourlyLimit": 6,
   "lockFileMaintenance": {
+    "extends": [
+      "@trim21:monthly"
+    ],
     "enabled": true
   },
   "packageRules": [
